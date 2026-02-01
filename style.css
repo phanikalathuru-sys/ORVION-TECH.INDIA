@@ -1,0 +1,173 @@
+/* ===========================
+   WEBNEXA – GLOBAL SAAS UIUX
+   =========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --primary: #0ea5e9;
+    --secondary: #38bdf8;
+    --dark: #0b2b5a;
+    --muted: #475569;
+    --glass: rgba(255, 255, 255, 0.75);
+    --radius: 22px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background: linear-gradient(180deg, #f4f9ff, #ffffff);
+    color: var(--dark);
+}
+
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(18px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 70px;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.logo-text small {
+    color: var(--muted)
+}
+
+nav a {
+    color: var(--dark);
+    margin: 0 16px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--primary)
+}
+
+
+/* HERO */
+
+.hero {
+    padding: 160px 12% 120px;
+    background: linear-gradient(180deg, #f4f9ff, #ffffff);
+    border-radius: 0 0 120px 120px;
+}
+
+.hero h1 {
+    font-size: 56px
+}
+
+.hero span {
+    color: var(--primary)
+}
+
+.hero p {
+    max-width: 600px;
+    color: var(--muted)
+}
+
+
+/* GLASS CARDS */
+
+.glass-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    padding: 35px;
+    border-radius: var(--radius);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .12);
+    transition: .3s;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px)
+}
+
+
+/* CTA BUTTON */
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    color: white;
+    padding: 16px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* FOOTER */
+
+.webnexa-footer {
+    background: var(--dark);
+    color: white;
+    padding: 40px 12%;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #9bdcff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+/* FLOAT BUTTON */
+
+.wa-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-decoration: none;
+    z-index: 2000;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Services — ORVION-TECHNOLOGIES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ORVION-TECHNOLOGIES provides websites, SaaS, mobile apps, ERP and business automation solutions across India.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Poppins, sans-serif;
+            color: #e5e7eb;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 58, 138, 0.9));
+        }
+        /* HEADER */
+        
+        .webnexa-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(18px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 60px;
+            z-index: 2000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+        }
+        
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        
+        .brand-logo {
+            height: 44px;
+        }
+        
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+        
+        .brand-name {
+            font-weight: 700;
+            font-size: 20px;
+            color: #38bdf8;
+        }
+        
+        .brand-tagline {
+            font-size: 12px;
+            color: #22d3ee;
+        }
+        
+        .webnexa-nav a {
+            margin: 0 14px;
+            text-decoration: none;
+            color: #e5e7eb;
+            font-weight: 500;
+            transition: .3s;
+        }
+        
+        .webnexa-nav a:hover {
+            color: #38bdf8;
+        }
+        /* HERO */
+        
+        .hero {
+            padding: 180px 12% 120px;
+            border-radius: 0 0 120px 120px;
+        }
+        
+        .hero h1 {
+            font-size: 54px;
+            color: #ffffff;
+        }
+        
+        .hero span {
+            color: #38bdf8;
+        }
+        
+        .hero p {
+            margin-top: 10px;
+            color: #cbd5f5;
+            font-size: 17px;
+        }
+        /* SERVICES */
+        
+        .services {
+            padding: 100px 12%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 35px;
+        }
+        
+        .service-card {
+            background: rgba(56, 189, 248, 0.18);
+            backdrop-filter: blur(20px);
+            padding: 40px 30px;
+            border-radius: 26px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, .35);
+            font-size: 17px;
+            font-weight: 500;
+            text-align: center;
+            transition: .35s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-12px);
+            background: rgba(56, 189, 248, 0.25);
+        }
+        /* CTA */
+        
+        .cta {
+            text-align: center;
+            padding: 80px 12%;
+        }
+        
+        .cta h2 {
+            font-size: 32px;
+            margin-bottom: 18px;
+            color: #ffffff;
+        }
+        
+        .cta a {
+            background: linear-gradient(135deg, #38bdf8, #22d3ee);
+            color: #0f172a;
+            padding: 16px 42px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .4);
+        }
+        /* FOOTER */
+        
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            color: #cbd5f5;
+            text-align: center;
+            padding: 40px 12%;
+        }
+        
+        @media (max-width: 768px) {
+            .webnexa-header {
+                padding: 14px 20px;
+            }
+            .webnexa-nav {
+                display: none;
+            }
+            .brand-logo {
+                height: 36px;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+            .services {
+                padding: 70px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="webnexa-header">
+        <div class="brand">
+            <img src="or logo.png" class="brand-logo" alt="ORVION-TECHNOLOGIES Logo">
+            <div class="brand-text">
+                <span class="brand-name" style="color: #ffffff;">ORVION-TECHNOLOGIES</span>
+                <span class="brand-tagline" style="color: #ffffff;">Innovating Today for a Better Tomorrow</span>
+            </div>
+        </div>
+        <nav class="webnexa-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Our <span>Digital Services</span></h1>
+        <p>Advanced technology solutions crafted for modern businesses.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <div class="service-card">💻 Business & Corporate Websites</div>
+        <div class="service-card">🏫 School ERP & Student Portals</div>
+        <div class="service-card">🏥 Hospital & Clinic Management Systems</div>
+        <div class="service-card">🏗 Real Estate CRM & Lead Automation</div>
+        <div class="service-card">🛒 E-Commerce Platforms</div>
+        <div class="service-card">📱 Android & iOS App Development</div>
+        <div class="service-card">☁️ SaaS Product Development</div>
+        <div class="service-card">🔐 Hosting, Security & Maintenance</div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Ready to scale your business digitally?</h2>
+        <a href="dataform.html">Get Free Consultation</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 ORVION-TECHNOLOGIES — All Rights Reserved
+    </footer>
+    <script>
+        document.getElementById("mobileMenuToggle").onclick = () =>
+            document.getElementById("mainNav").classList.toggle("active");
+
+        window.addEventListener("scroll", () =>
+            document.querySelector(".site-header").classList.toggle("scrolled", window.scrollY > 50)
+        );
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Free Consultation — ORVION-TECHNOLOGIES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get a free consultation from WebNexa India for websites, SaaS and business software solutions.">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Poppins, sans-serif;
+            color: #e5e7eb;
+            background-image: linear-gradient( 135deg, rgba(15, 23, 42, 0.95), rgba(30, 58, 138, 0.9)), url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=90");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        /* HEADER */
+        
+        .webnexa-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(18px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 60px;
+            z-index: 2000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        
+        .brand-logo {
+            height: 44px;
+        }
+        
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+        
+        .brand-name {
+            font-weight: 700;
+            font-size: 20px;
+            color: #38bdf8;
+        }
+        
+        .brand-tagline {
+            font-size: 12px;
+            color: #22d3ee;
+        }
+        
+        .webnexa-nav a {
+            margin: 0 14px;
+            text-decoration: none;
+            color: #e5e7eb;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        
+        .webnexa-nav a:hover {
+            color: #38bdf8;
+        }
+        /* HERO */
+        
+        .hero {
+            padding: 160px 12% 90px;
+            border-radius: 0 0 120px 120px;
+        }
+        
+        .hero h1 {
+            font-size: 52px;
+            color: #ffffff;
+        }
+        
+        .hero span {
+            color: #38bdf8;
+        }
+        
+        .hero p {
+            color: #cbd5f5;
+            max-width: 600px;
+        }
+        /* FORM */
+        
+        .form-wrap {
+            max-width: 650px;
+            margin: -70px auto 120px;
+            background: rgba(56, 189, 248, 0.18);
+            backdrop-filter: blur(20px);
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+        }
+        
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 14px 16px;
+            margin: 14px 0;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(15, 23, 42, 0.8);
+            color: #e5e7eb;
+            font-size: 15px;
+            outline: none;
+        }
+        
+        input::placeholder,
+        textarea::placeholder {
+            color: #94a3b8;
+        }
+        
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #38bdf8;
+            box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3);
+        }
+        
+        select option {
+            color: #0f172a;
+        }
+        
+        button {
+            width: 100%;
+            background: linear-gradient(135deg, #38bdf8, #22d3ee);
+            color: #0f172a;
+            border: none;
+            padding: 16px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            transition: 0.3s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            opacity: 0.95;
+        }
+        /* FOOTER */
+        
+        footer {
+            background: rgba(15, 23, 42, 0.9);
+            color: #cbd5f5;
+            text-align: center;
+            padding: 40px 12%;
+        }
+        /* RESPONSIVE */
+        
+        @media (max-width: 768px) {
+            .webnexa-header {
+                padding: 14px 20px;
+            }
+            .brand-logo {
+                height: 36px;
+            }
+            .webnexa-nav {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+            .form-wrap {
+                padding: 30px;
+                margin: -40px 20px 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="webnexa-header">
+        <div class="brand">
+            <img src="or logo.png" class="brand-logo" alt="WebNexa Logo">
+            <div class="brand-text">
+                <span class="brand-name" ; style="color: #ffffff;">ORVION-TECHNOLOGIES</span>
+                <span class="brand-tagline" ; style="color: #ffffff;">Innovating Today for a Better Tomorrow</span>
+            </div>
+        </div>
+        <nav class="webnexa-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Get a <span>Free Consultation</span></h1>
+        <p>Tell us about your business and we will contact you.</p>
+    </section>
+
+    <section class="form-wrap">
+        <form id="leadForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="tel" id="phone" placeholder="Mobile Number" required>
+            <input type="email" id="email" placeholder="Email Address">
+            <select id="service" required>
+                <option value="">Select Service Needed</option>
+                <option>Website</option>
+                <option>Mobile App</option>
+                <option>School Software</option>
+                <option>Hospital Software</option>
+                <option>Custom Software</option>
+            </select>
+            <textarea id="msg" rows="4" placeholder="Tell us about your business"></textarea>
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <p style="color: greenyellow;">© 2026 ORVION-TECHNOLOGIES— Building Digital Future</p>
+    </footer>
+
+    <script>
+        document.getElementById("leadForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            let name = document.getElementById("name").value.trim();
+            let phone = document.getElementById("phone").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let service = document.getElementById("service").value;
+            let msg = document.getElementById("msg").value.trim();
+
+            if (name === "" || phone === "" || service === "") {
+                alert("Please fill required fields");
+                return;
+            }
+
+            let text =
+                "New WebNexa Lead%0AName: " + name +
+                "%0APhone: " + phone +
+                "%0AEmail: " + email +
+                "%0AService: " + service +
+                "%0AMessage: " + msg;
+
+            window.open("https://wa.me/919550163488?text=" + text, "_blank");
+            alert("Thank you! Our team will contact you shortly.");
+            this.reset();
+        });
+    </script>
+
+</body>
+
+</html>

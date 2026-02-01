@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - ORVION-TECHNOLOGIES</title>
+    <meta name="description" content="ORVION-TECHNOLOGIES is a security-first product engineering company building and scaling high-handling software systems for startups and enterprises.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: "Plus Jakarta Sans", Inter, sans-serif;
+            background: linear-gradient(135deg, rgba(15, 23, 42, .95), rgba(30, 58, 138, .9)), url("https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2070&q=80");
+            background-size: cover;
+            background-attachment: fixed;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        /* ===== HEADER ===== */
+        
+        .site-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, .85);
+            backdrop-filter: blur(18px);
+            z-index: 9999;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+            transition: .3s;
+        }
+        
+        .site-header.scrolled {
+            background: rgba(15, 23, 42, .95);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .logo img {
+            height: 42px;
+        }
+        
+        .logo-tagline {
+            font-size: 12px;
+            font-weight: 500;
+            color: #fff;
+        }
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .nav-link {
+            color: #e5e7eb;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: #38bdf8;
+        }
+        
+        .btn {
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #38bdf8, #22d3ee);
+            color: #0f172a;
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, .15);
+            color: #fff;
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        
+        @media (max-width:768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+            .nav {
+                position: absolute;
+                top: 70px;
+                right: 0;
+                background: rgba(15, 23, 42, .95);
+                flex-direction: column;
+                width: 220px;
+                padding: 20px;
+                display: none;
+                border-radius: 0 0 0 20px;
+            }
+            .nav.active {
+                display: flex;
+            }
+        }
+        /* ===== HERO ===== */
+        
+        .about-hero {
+            padding: 180px 0 110px;
+            background: linear-gradient(135deg, rgba(15, 23, 42, .6), rgba(15, 23, 42, .85));
+        }
+        
+        .hero-title {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-description {
+            color: #cbd5f5;
+            font-size: 18px;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: rgba(56, 189, 248, .2);
+            color: #38bdf8;
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        section {
+            padding: 100px 0;
+        }
+        /* ===== FOUNDER ===== */
+        
+        .founder-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .founder-image {
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, .45);
+        }
+        
+        .founder-image img {
+            width: 100%;
+            display: block;
+        }
+        
+        @media (max-width:768px) {
+            .hero-title {
+                font-size: 36px;
+            }
+            .founder-content {
+                grid-template-columns: 1fr;
+            }
+            .founder-image {
+                order: -1;
+            }
+        }
+        /* ===== FOOTER ===== */
+        
+        .site-footer {
+            background: rgba(15, 23, 42, .95);
+            padding: 50px 0;
+            color: #cbd5f5;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <img src="or logo.png" alt="ORVION Logo">
+                <div>
+                    <div>ORVION-TECHNOLOGIES</div>
+                    <div class="logo-tagline">Security-First Engineering for Scalable Systems</div>
+                </div>
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+            <nav class="nav" id="mainNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="dataform.html" class="btn btn-primary">Get Quote</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <span class="tag">Our Story</span>
+            <h1 class="hero-title">Engineering Secure & Scalable Digital Systems</h1>
+            <p class="hero-description">
+                ORVION-TECHNOLOGIES is an India-based technology company working with startups and large organizations to build and scale security-first software products that handle high-traffic and critical systems.
+            </p>
+        </div>
+    </section>
+
+    <section class="founder-section">
+        <div class="container founder-content">
+
+            <div>
+                <span class="tag">Founder</span>
+                <h2>Kalathuru Saiphaneendra</h2>
+                <p><strong>Founder & CEO – ORVION-TECHNOLOGIES</strong></p>
+                <p>
+                    A technology entrepreneur from Nellore focused on building security-first software systems. He leads ORVION with strong emphasis on architecture, product thinking, and long-term scalability for startups and large technology platforms.
+                </p>
+
+                <div style="margin-top:20px;display:flex;gap:12px;">
+                    <a href="linkedin.com/in/kalathuru-saiphaneendra-b73872284" class="btn btn-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </div>
+            </div>
+
+            <div class="founder-image">
+                <img src="founder.img.png" alt="Founder">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="founder-section">
+        <div class="container founder-content">
+
+            <div>
+                <span class="tag">Co-Founder</span>
+                <h2>Mr. Nare Vignesh</h2>
+                <p><strong>Co-Founder – ORVION-TECHNOLOGIES</strong></p>
+                <p>
+                    Mr. Nare Vignesh is a technology-driven entrepreneur from Annamayya District with strong interest in startup ecosystems and scalable systems. As Co-Founder, he collaborates on product execution, system reliability, and long-term technology growth strategies
+                    at ORVION.
+                </p>
+
+                <div style="margin-top:20px;display:flex;gap:12px;">
+                    <a href="#" class="btn btn-secondary">
+                        <i class="fas fa-user"></i> Co-Founder
+                    </a>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </div>
+            </div>
+
+            <div class="founder-image">
+                <img src="co-founder.png" alt="Co-Founder">
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        © 2026 ORVION-TECHNOLOGIES. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById("mobileMenuToggle").onclick = () =>
+            document.getElementById("mainNav").classList.toggle("active");
+
+        window.addEventListener("scroll", () =>
+            document.querySelector(".site-header").classList.toggle("scrolled", window.scrollY > 50)
+        );
+    </script>
+
+</body>
+
+</html>

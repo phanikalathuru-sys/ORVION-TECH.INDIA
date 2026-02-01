@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Client Testimonials — ORVION-TECHNOLOGIES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real client testimonials of WebNexa India — trusted SaaS and web development company in Nellore.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <style>
+        /* ================= RESET ================= */
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Poppins, sans-serif;
+            color: #e5e7eb;
+            background: linear-gradient( 135deg, rgba(15, 23, 42, 0.95), rgba(30, 58, 138, 0.9)), url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=90");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        /* ================= HEADER ================= */
+        
+        .webnexa-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(18px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 60px;
+            z-index: 2000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        
+        .brand-logo {
+            height: 44px;
+        }
+        
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+        
+        .brand-name {
+            font-weight: 700;
+            font-size: 20px;
+            color: #38bdf8;
+        }
+        
+        .brand-tagline {
+            font-size: 12px;
+            color: #22d3ee;
+        }
+        
+        .webnexa-nav a {
+            margin: 0 14px;
+            text-decoration: none;
+            color: #e5e7eb;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        
+        .webnexa-nav a:hover {
+            color: #38bdf8;
+        }
+        /* ================= HERO ================= */
+        
+        .hero {
+            padding: 170px 12% 120px;
+            border-radius: 0 0 120px 120px;
+        }
+        
+        .hero h1 {
+            font-size: 52px;
+            color: #ffffff;
+        }
+        
+        .hero span {
+            color: #38bdf8;
+        }
+        
+        .hero p {
+            margin-top: 10px;
+            color: #cbd5f5;
+            font-size: 18px;
+        }
+        /* ================= TESTIMONIAL GRID ================= */
+        
+        .grid {
+            padding: 120px 12%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        
+        .card {
+            background: rgba(56, 189, 248, 0.18);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            border-radius: 28px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+            transition: 0.3s;
+            position: relative;
+        }
+        
+        .card::before {
+            content: "“";
+            font-size: 80px;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            color: rgba(56, 189, 248, 0.4);
+            font-weight: 700;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card p {
+            color: #cbd5f5;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .name {
+            font-weight: 700;
+            color: #38bdf8;
+            margin-top: 18px;
+        }
+        /* ================= FOOTER ================= */
+        
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            color: #cbd5f5;
+            text-align: center;
+            padding: 40px 12%;
+        }
+        /* ================= RESPONSIVE ================= */
+        
+        @media (max-width: 768px) {
+            .webnexa-header {
+                padding: 14px 20px;
+            }
+            .webnexa-nav {
+                display: none;
+            }
+            .brand-logo {
+                height: 36px;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="webnexa-header">
+        <div class="brand">
+            <img src="or logo.png" class="brand-logo" alt="WebNexa Logo">
+            <div class="brand-text">
+                <span class="brand-name" style="color: #ffffff;">ORVION-TECHNOLOGIES</span>
+                <span class="brand-tagline" style="color: #ffffff;">Innovating Today for a Better Tomorrow</span>
+            </div>
+        </div>
+        <nav class="webnexa-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="testimonials.html">Testimonials</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Client <span>Testimonials</span></h1>
+        <p>Real words from businesses that trust WebNexa.</p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="grid">
+        <div class="card">
+            <p>ORVION-TECHNOLOGIES my shop business with a beautiful website and WhatsApp integration.</p>
+            <div class="name">– Local Retail Store</div>
+        </div>
+
+        <div class="card">
+            <p>Professional team. Fast delivery. Very affordable pricing.</p>
+            <div class="name">– Coaching Center Owner</div>
+        </div>
+
+        <div class="card">
+            <p>Their hospital appointment system increased our patient bookings.</p>
+            <div class="name">– Medical Clinic</div>
+        </div>
+
+        <div class="card">
+            <p>Best digital startup in Nellore. Very supportive founder.</p>
+            <div class="name">– Real Estate Builder</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="color: greenyellow;">
+        © 2026 ORVION-TECHNOLOGIES — Building Nellore’s Digital Future
+    </footer>
+    <script>
+        document.getElementById("mobileMenuToggle").onclick = () =>
+            document.getElementById("mainNav").classList.toggle("active");
+
+        window.addEventListener("scroll", () =>
+            document.querySelector(".site-header").classList.toggle("scrolled", window.scrollY > 50)
+        );
+    </script>
+</body>
+
+</html>
