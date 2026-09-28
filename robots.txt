@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://orvion-tech-india.pages.dev/sitemap.xml
